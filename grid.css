@@ -30,9 +30,10 @@ body{
     margin: 5px 0;
     width: 100%;
   }
-  .one-up:nth-child(2) { margin-right: 0; }
+  .one-up:nth-child(2), .one-up:nth-child(4) { margin-right: 0; }
   .one-up:nth-child(3) { margin-left: 0; }
-  .one-up:nth-child(4) { margin-right: 0; }
+
+  /* edge cases for mixed .one-up + .two-up layouts */
   .one-up + .two-up + .one-up{ /* 1 - 2 - (1) */
     width: 100%;
   }
